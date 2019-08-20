@@ -26,6 +26,11 @@
 
       var session = OT.initSession(apiKey, sessionId);
 
+window.OT.getDevices(function (error, devices) {
+console.log(error);
+console.log(devices);
+});
+
       publisher = OT.initPublisher('myPublisherDiv', pubOptions);
       
       //publisher.publishVideo(false);
